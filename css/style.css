@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 95vh 1fr 26vw;
+}
+
+.world{
+    height: 98%;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: repeat(20,auto);
+    grid-template-rows:  repeat(20,auto);
+    margin-top: 1vh;
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.8);
+}
+
+.toolbar{
+    height: 100%;
+    grid-column: 4 / 4;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.tile{
+    width: auto;
+    height: auto;
+}
+
+.tile:hover{
+  box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
+  /* border-style: groove; */
+}
+
+#sky{
+    background-color: cornflowerblue;
+}
+
+#grass {
+    background:url(../img/grass.png)no-repeat center
+    center/cover;
+}
+
+#soil{
+    background:url(../img/soil.png)no-repeat center
+    center/cover;
+}
+
+#water{
+    background:url(../img/water.png)no-repeat center
+    center/cover;
+}
+
+#stone{
+    background:url(../img/stone.png)no-repeat center
+    center/cover;
+}
+
+#treeTrunk{
+    background:url(../img/treeTrunk.png)no-repeat center
+    center/cover;
+}
+
+#treeBranch{
+    background:url(../img/treeBranch.png)no-repeat center
+    center/cover;
+}
+
+#cloud{
+    background:url(../img/cloud.png)no-repeat center
+    center/cover;
+}
+#gold{
+  background: url(../img/gold.png)no-repeat center 
+  center/cover;
+}
+
+#lava{
+  background: url(../img/lava.png)no-repeat center 
+  center/cover;
+}
+
+.title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.toolbarList {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   grid-template-rows: repeat(2, auto);
+  }
+
+.toolbarBox {
+    margin: 5px 5px;
+    height: 10vh;
+    width: 10vw;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    list-style-type: none;
+  }
+
+  #axe {
+    background: url(../img/axe.png)center / 45% no-repeat;
+  }
+
+  #pickaxe {
+    background: url(../img/pickaxe.png)center / 50% no-repeat;
+  }
+
+  #shovel {
+    background: url(../img/shovel.png)center / 50% no-repeat;
+  }
+
+  #full-bucket {
+    background: url(../img/fullbucket.png)center / 40% no-repeat;
+  }
+  
+  #drill {
+    background: url(../img/drill.png)center / 50% no-repeat;
+  }
+  
+  #empty-bucket {
+    background: url(../img/emptybucket.png)center / 40% no-repeat;
+  }
+
+  .materialsList{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding-left: 40px;
+  }
+
+  .materialBox {
+  list-style-type: none;
+  margin: 10px 10px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid white;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.toolbarBox.selected {
+  border: 3px solid blue;
+}
+
+.materialBox.selected {
+  border: 3px solid blue;
+}
+.toolbarBox:hover {
+  cursor: pointer;
+  border: 3px solid red;
+}
+.materialBox:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 5px red
+}
+
+.refreshBtton{
+   background: url(../img/boom.png)center / 25% no-repeat;
+   outline: none;
+   border: none;
+   border-radius: 15px;
+   padding: 35px;
+}
+
+.refreshBtton:hover{
+   cursor: pointer;
+   background-color: rgb(21, 255, 0);
+}
+
+.refreshBtton:active{
+   transform: translateY(4px);
+}
+ 
+
+  
+
+
+
